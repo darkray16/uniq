@@ -34,9 +34,9 @@ function unique_eq(list, warn) {
         continue
       }
       list[ptr++] = a
+    } else {
+      warn(a);
     }
-  } else {
-    warn(a);
   }
   list.length = ptr
   return list
