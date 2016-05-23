@@ -13,8 +13,8 @@ function unique_pred(list, compare, warn) {
         continue
       }
       list[ptr++] = a
-    } else {
-      warn(a);
+    } else if (warn) {
+      warn(a)
     }
   }
   list.length = ptr
@@ -34,8 +34,8 @@ function unique_eq(list, warn) {
         continue
       }
       list[ptr++] = a
-    } else {
-      warn(a);
+    } else if(warn) {
+      warn(a)
     }
   }
   list.length = ptr
